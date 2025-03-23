@@ -3,7 +3,7 @@
 // Function to handle button click events
 function selectOption(option) {
     // Check which option was clicked
-    if (option === 'คิดถึงแน้ววว') {
+    if (option === 'คิดถึงแน้วว') {
         // Flash rainbow colors
         flashRainbowColors(function() {
             document.getElementById('question').style.display = 'none'; // Hide the question
@@ -12,13 +12,13 @@ function selectOption(option) {
     } else if (option === 'ม่ายยย') {
         // Change text on the "ม่ายยย" button to "หราาา?"
         document.getElementById('ม่ายยย-button').innerText = 'หราาา?'; 
-        // Increase font size of "คิดถึงแน้ววว" button
-        var คิดถึงแน้วววButton = document.getElementById('คิดถึงแน้ววว-button');
+        // Increase font size of "คิดถึงแน้วว" button
+        var คิดถึงแน้วววButton = document.getElementById('คิดถึงแน้วว-button');
         var currentFontSize = window.getComputedStyle(คิดถึงแน้วววButton).getPropertyValue('font-size');
         var newSize = parseFloat(currentFontSize) * 2; // Increase font size by  * 2px
         คิดถึงแน้วววButton.style.fontSize = newSize + 'px';
     } else {
-        // If neither "คิดถึงแน้ววว" nor "ม่ายยย" was clicked, show an alert message
+        // If neither "คิดถึงแน้วว" nor "ม่ายยย" was clicked, show an alert message
         alert('Invalid option!');
     }
 }
